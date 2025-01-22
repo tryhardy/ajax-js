@@ -301,10 +301,11 @@ class AjaxLoadHandler {
                 }
             });
         });
-/*
-$(document).on('change', '[data-submit-form]', function () {
-$(this).closest('form').trigger('submit');
-});*/
+        
+        /*
+        $(document).on('change', '[data-submit-form]', function () {
+        $(this).closest('form').trigger('submit');
+        });*/
 
         $(document).on('click', '[data-submit-form-on-click]', function (event) {
             event.preventDefault();
@@ -326,6 +327,6 @@ $(this).closest('form').trigger('submit');
 }
 
 $(() => {
-window.__ajaxLoaderHandler = new AjaxLoadHandler();
+    window.__ajaxLoaderHandler = new AjaxLoadHandler();
 });
 ```
